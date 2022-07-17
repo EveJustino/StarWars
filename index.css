@@ -1,0 +1,883 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500;600&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Radio Canada', sans-serif;
+}
+
+.headerMobile{
+  display:none;
+}
+
+header{
+  max-width:1820px;
+  width:100%;
+  background-image: url('./fundoHeader.png');
+  background-repeat:no-repeat;
+  background-size:100%;
+  display:flex;
+  justify-content:center;
+}
+
+.containerHeader{
+  width:100vw;
+  height:89vh;
+  display:flex;
+  justify-content:center;
+  position:relative;
+}
+
+.nameStar{
+  height:13vh;
+}
+
+.nameWars{
+  height:13vh;
+}
+
+.boxName{
+  width:73vw;
+  height:15vh;
+  margin-top:48vh;
+  margin-left:10vw;
+  position:absolute;
+  display:flex;
+  justify-content:space-between;
+}
+
+.bottonLegion{
+  width:135px;
+  height:135px;
+  margin-left:905px;
+  margin-top:450px;
+  position:absolute;
+}
+
+.kyloRen{
+  position:absolute;
+  left:140px;
+}
+
+.kyloRen img{
+  width:69vw;
+  position:absolute;
+}
+
+@media(max-width:375px){
+  .headerMobile{
+    display:initial;
+    width:375px;
+    position:absolute;
+  }
+  
+  .nameStar{
+    display:none;
+  }
+  
+  .nameWars{
+    display:none;
+  }
+  
+  .boxName{
+    display:none;
+  }
+     
+  .bottonLegion{
+    display:none;
+  }
+
+  .kyloRen img{
+    display:none;
+  }
+}
+
+main{
+  max-width:100vw; 
+  width:100%;
+  height:470vh;
+}
+
+.containerMain{
+  width:100vw;
+  height:155vh;
+  background-image:url('./fundoMain.png');
+  position:relative;
+  background-repeat:no-repeat;
+  background-size:contain;
+}
+
+.playGame{
+  position:absolute;
+  left:180px;
+  top:-50px;
+  width:280px;
+}
+
+.textPlaygame{
+  position:absolute;
+  width:20vw;
+  height:60vh;
+  left:183px;
+  top: -50px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-evenly;
+  align-items:center;
+}
+
+.textPlaygame h3{
+  width:12vw;
+  font-size:35px;
+  color:white;
+  weight:400;
+}
+
+.textPlaygame p{
+  width:17vw;
+  font-size:13.5px;
+  color:white;
+  font-weight:300;
+}
+
+.buttonDownload{
+  background:none;
+  width:10vw;
+  height:6vh;
+  font-size:14px;
+  border-radius:5px;
+  font-weight:300;
+  border-color:white;
+  color:white;
+}
+
+.buttonDownload:hover{
+  background-color:#FF5A56;
+  cursor:pointer;
+}
+
+.aboutGame{
+  position:absolute;
+  width:50vw;
+  left:557px;
+  top:188px;
+}
+
+.aboutGamemobile{
+  position:absolute;
+  display:none;
+}
+
+.line{
+  color:grey;
+  border:solid;
+  width:78vw;
+  height:0;
+  left:180px;
+  top:460px;
+  position:absolute;
+}
+
+@media(max-width:375px){
+  header, .containerHeader{
+    height:47vh;
+  }
+  
+  main{
+    position:relative;
+  }
+  
+  .containerMain{
+    width:100%;
+    background-size:60%;
+    position:relative;
+    background-image:none;
+  }
+  
+  .playGame{
+    top:-15px;
+    left:105px;
+    width:60vw;
+  }
+  
+  .textPlaygame{
+    width:59vw;
+    height:60vh;
+    top:0px;
+    left:107px;
+  }
+  
+  .textPlaygame h3{
+    font-size:30px;
+    width:37vw;
+    height:30vh;
+    display:flex;
+    align-items:center;
+  } 
+  
+  .textPlaygame p{
+    width:47vw;
+    height:20vh;
+    font-size:14px;
+    text-align:justify;
+  }
+  
+  .buttonDownload{
+    width:33vw;
+    margin-bottom:40px;
+    font-size:15px;
+  }
+  
+  .aboutGame{
+    display:none;
+  }
+  
+  .aboutGamemobile{
+    display:initial;
+    width:81.5vw;
+    left:7vw;
+    top:64vh;
+  }
+  
+  .line{
+    width:81.5vw;
+    left:7vw;
+    top:130vh;
+  }
+}
+
+.lordSifh{
+  width:41vw;
+  position:absolute;
+  top:165vh;
+  left:205px;
+}
+
+.structureGame{
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  top:172vh;
+  left:510px;
+  height:80vh;
+  width:30vw;
+}
+
+.structureGame h2{
+  text-align:right;
+  font-size:40px;
+  width:20vw;
+  display:flex;
+  margin-left:130px;
+}
+
+.structureGame ul{
+  height:57vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-evenly;
+  font-size:18px;
+}
+
+.structureGame li{
+  list-style:none;
+  text-align:right;
+}
+
+.structureGame li:hover{
+  background-color:#FF5A56;
+  cursor:pointer;
+  color:white;
+}
+
+.rey{
+  position:absolute;
+  top:172vh;
+  left:920px;
+  width:20vw;
+}
+
+.bannerGrey{
+  width:99vw;
+  height:250vh;
+}
+
+@media(max-width:375px){
+  .lordSifh{
+    width:47vw;
+    left:2vw;
+    top:138vh;
+  }
+  
+  .structureGame{
+    width:40vw;
+    height:28vh;
+    top:138vh;
+    left:28vw;
+  }
+  
+  .structureGame h2{
+    font-size:18px;
+    margin-left:44px;
+    width:25vw;
+  }
+  
+  .structureGame ul{
+    font-size:7.5px;
+    height:18vh;
+  }
+  
+  .rey{
+    width:27vw;
+    left:66vw;
+    top:137vh;
+  }
+  
+  .bannerGrey{
+    margin-top:8.5vh;
+    width:374px;
+    height:253vh;
+  } 
+}
+
+.wordAttributes{
+  position:absolute;
+  top:1720px;
+  left:190px;
+  width:16vw;
+}
+
+.war{
+  position:absolute;
+  top:1820px;
+  left:90px;
+  width:42.5vw;
+}
+
+.war:hover{
+  background-color:red;
+  opacity:40px;
+  cursor:zoom-in;
+}
+
+.stormtrooper{
+  position:absolute;
+  top:1820px;
+  left:49.1vw;
+  width:21.2vw;
+}
+
+.stormtrooper:hover{
+  background-color:blue;
+  opacity:40px;
+  cursor:zoom-in;
+}
+
+.starGame{
+  position:absolute;
+  top:1820px;
+  left:70.3vw;
+  width:21.2vw;
+}
+
+.starGame:hover{
+  background-color:orange;
+  opacity:40px;
+  cursor:zoom-in;
+}
+
+.battle{
+  position:absolute;
+  top:1997px;
+  left:49.1vw;
+  width:21.2vw;
+}
+
+.battle:hover{
+  background-color:yellow;
+  opacity:40px;
+  cursor:zoom-in;
+}
+
+.darthVader{
+  position:absolute;
+  top:1997px;
+  left:70.3vw;
+  width:21.2vw;
+}
+
+.darthVader:hover{
+  background-color:green;
+  opacity:40px;
+  cursor:zoom-in;
+}
+
+.newGraphics{
+  display:none;
+  position:absolute;
+  top:1850px;
+  left:48.7vw;
+  width:21.2vw;
+}
+
+.hierarchy{
+  position:absolute;
+  top:2240px;
+  left:85px;
+  width:85vw;
+}
+
+.textRule{
+  position:absolute;
+  top:2950px;
+  left:670px;
+  width:42vw;
+}
+
+.textRulemobile{
+  display:none;
+}
+
+@media(max-width:375px){
+  .wordAttributes{
+    position:absolute;
+    top:177vh;
+    left:40vw;
+    width:20vw;
+  }
+  
+  .war{
+    width:81vw;
+    top:183vh;
+    left:10vw;
+  }
+  
+  .stormtrooper{
+    width:81vw;
+    top:216vh;
+    left:10vw;
+  }
+  
+  .starGame{
+    width:81vw;
+    top:249vh;
+    left:10vw;
+  }
+  
+  .battle{
+    width:81vw;
+    top:282vh;
+    left:10vw;
+  }
+  
+  .darthVader{
+    width:81vw;
+    top:315vh;
+    left:10vw;
+  }
+  
+  .newGraphics{
+    width:81vw;
+    top:2192px;
+    left:68px;
+  }
+  
+  .hierarchy{
+    width:99.7vw;
+    left:0;
+    top:352vh;
+  }
+  
+  .textRule{
+    display:none;
+  }
+  
+  .textRulemobile{
+    display:initial;
+    position:absolute;
+    top:392vh;
+    left:30vw;
+    width:60vw;
+  }
+}
+
+.howToplay h3{
+  position:absolute;
+  top:475vh;
+  left:41vw;
+  color:white;
+  font-size:37px;
+}
+
+.silver{
+  position:absolute;
+  top:455vh;
+  left:5vw;
+  width:30vw;
+}
+
+.howToplaybuttons{
+  position:relative;
+  display:flex;
+}
+
+.download01{
+  margin-left:40vw;
+  margin-top:8vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-evenly;
+  width:12vw;
+  height:35vh;
+  position:absolute;
+}
+
+.download01 h2{
+  font-size:30px;
+  font-weight:300;
+}
+
+.download01 button{
+  width:12vw;
+  height:8vh;
+  font-size:20px;
+  background-color:black;
+  color:white;
+  font-weight:300;
+  transition:ease-in-out 1s;
+}
+
+.download01 p{
+  text-align:center;
+  font-size:12px;
+  width:8vw;
+}
+
+.download01 div{
+  border:solid 1.3px;
+  width:4vw;
+  background-color:black;
+}
+
+.escolher02{
+  margin-left:60vw;
+  margin-top:8vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-evenly;
+  width:12vw;
+  height:35vh;
+  position:absolute;
+}
+
+.escolher02 h2{
+  font-size:30px;
+  font-weight:300;
+}
+
+.escolher02 button{
+  width:12vw;
+  height:8vh;
+  font-size:20px;
+  background-color:black;
+  color:white;
+  font-weight:300;
+  transition:ease-in-out 1s;
+}
+
+.escolher02 p{
+  text-align:center;
+  width:6vw;
+  font-size:12px;
+}
+
+.escolher02 div{
+  border:solid 1.3px;
+  width:4vw;
+  background-color:black;
+}
+
+.explorar03{
+  margin-left:79vw;
+  margin-top:8vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-evenly;
+  width:12vw;
+  height:35vh;
+  position:absolute;
+}
+
+.explorar03 h2{
+  font-size:30px;
+  font-weight:300;
+}
+
+.explorar03 button{
+  width:12vw;
+  height:8vh;
+  font-size:20px;
+  background-color:black;
+  color:white;
+  font-weight:300;
+  transition:ease-in-out 1s;
+}
+
+.explorar03 p{
+  text-align:center;
+  width:4vw;
+  font-size:12px;
+}
+
+.explorar03 div{
+  border:solid 1.3px;
+  width:4vw;
+  background-color:black;
+}
+
+.howToplaybuttons button:hover{
+  cursor:pointer;
+  box-shadow:inset red 180px 0px;
+}
+
+@media(max-width:375px){
+  .howToplay h3{
+    font-size:18px;
+    left:52vw;
+    top:405vh;
+    width:40vw;
+  }
+  
+  .silver{
+    top:398vh;
+    left:-50vw;
+    width:115vw;
+  }
+  
+  .howToplaybuttons{
+    position:relative;
+    height:200vh;
+    width:100vw;
+  }
+  
+  .download01{
+    position:absolute;
+    width:35vw;
+    top:-7vh;
+    left:12vw;
+  }
+  
+  .download01 button{
+    width:35vw;
+    height:10vh;
+  }
+  
+  .download01 p{
+    width:28vw;
+  }
+  
+  .download01 div{
+    width:14vw;
+  }
+  
+  .escolher02{
+    top:27vh;
+    left:-7vw;
+    width:35vw;
+    position:absolute;
+  }
+  
+  .escolher02 button{
+    width:35vw;
+    height:10vh;
+  }
+  
+  .escolher02 p{
+    width:18vw;
+  }
+  
+  .escolher02 div{
+    width:14vw;
+  }
+  
+  .explorar03{
+    positiion:absolute;
+    top:61vh;
+    left:-26vw;
+    width:35vw;
+  }
+  
+  .explorar03 button{
+    width:35vw;
+    height:10vh;
+  }
+  
+  .explorar03 p{
+    width:18vw;
+  }
+  
+  .explorar03 div{
+    width:14vw;
+  }
+}
+
+
+footer{
+  width:100vw;
+  max-width:100%;
+  height:106vh;
+  position:relative;
+}
+
+.bannerFooter{
+  width:63vw;
+  position:absolute;
+}
+
+.vaderFooter{
+  position:absolute;
+  top:-17vh;
+  left:52vw;
+  width:40vw;
+}
+
+.wordApp{
+  position:absolute;
+  width:16vw;
+  top:10vh;
+  left:13vw;
+}
+
+.textFooter1--mobile{
+  display:none;
+}
+
+.textFooter1{
+  position:absolute;
+  top:25vh;
+  left:13vw;
+  width:32vw;
+}
+
+.playStorebutton{
+  position:absolute;
+  top:40vh;
+  left:13vw;
+  width:15vw;
+}
+
+.playStorebutton:hover{
+  cursor:pointer;
+}
+
+.appStorebutton{
+  position:absolute;
+  top:40vh;
+  left:29vw;
+  width:15vw;  
+}
+
+.lineFooter{
+  position:absolute;
+  width:31vw;
+  left:13vw;
+  top:55vh;
+  border:solid 2px #D74430;
+}
+
+.logo{
+  position:absolute;
+  width:15vw;
+  left:13vw;
+  top:60vh;
+}
+
+.textPolitic{
+  position:absolute;
+  width:29vw;
+  left:13vw;
+  top:78vh;
+}
+
+.textPolitic--mobile{
+  display:none;
+}
+
+@media(max-width:375px){
+  footer{
+    margin-top: 310px;
+  }
+
+  .bannerFooter{
+    width:100vw;
+    height:124vh;
+    position:relative;
+  }
+  
+  .containerFooter{
+    position:absolute;
+    width:96vw;
+    height:175vh;
+    top:0vh;
+  }
+  
+  .wordApp{
+    width:72vw;
+    left:12vw;
+  }
+  
+  .textFooter1{
+    display:none;
+  }
+  
+  .textFooter1--mobile{
+    display:initial;
+    position:absolute;
+    width:77vw;
+    left:12vw;
+    top:22vh;
+  }
+  
+  .playStorebutton{
+    width:34vw;
+    position:absolute;
+  }
+  
+  .appStorebutton{
+    width:34vw;
+    left:50vw;
+  }
+  
+  .lineFooter{
+    width:71vw;
+    top:50vh;
+  }
+  
+  .logo{
+    width:38vw;
+    left:30vw;
+    top:57vh;
+  }
+  
+  .textPolitic{
+    display:none;
+  }
+  
+  .textPolitic--mobile{
+    display:initial;
+    position:absolute;
+    top:74vh;
+    left:13vw;
+    width:74vw;
+  }
+  .vaderFooter{
+    position:absolute;
+    width:77vw;
+    top:92vh;
+    left:11vw;
+  }
+}
